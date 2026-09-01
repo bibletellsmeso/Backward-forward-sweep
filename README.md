@@ -6,7 +6,7 @@ Educational Python implementation of the backward/forward sweep algorithm for ra
 
 | File | Purpose |
 |---|---|
-| `Backwardforward sweep.py` | Main script implementing the iterative backward/forward sweep. |
+| `backward_forward_sweep.py` | Main script implementing the iterative backward/forward sweep. |
 | `33Bus.txt`, `33Line.txt` | Default 33-bus test-system input used by the script. |
 | `3Bus.txt`, `3Line.txt` | Smaller historical test inputs. |
 
@@ -21,13 +21,13 @@ The script currently reads the 33-bus input files from its working directory and
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-python "Backwardforward sweep.py"
+python backward_forward_sweep.py
 ```
 
 ## Notes
 
 - The current script is a standalone teaching/research script rather than an importable package.
-- The historical filename contains a space and mixed casing. It will be renamed only after imports, data paths, and a representative run are verified.
+- The original filename has been normalized to `backward_forward_sweep.py`. The script remains at the repository root so its relative data paths continue to work.
 - New cache, virtual-environment, and generated-output files are excluded by `.gitignore`.
 
 ## License and citation
