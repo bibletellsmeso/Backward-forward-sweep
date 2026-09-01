@@ -7,5 +7,6 @@ venv/
 .idea/
 outputs/
 results/
+fig.png
 .DS_Store
 Thumbs.db
